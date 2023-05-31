@@ -18,3 +18,6 @@ Sometimes I feel not so productive and time flies so fast. I want to know how I 
 - Next.js
 - MongoDB
 - Tailwind CSS
+
+## Others
+- [Color Palette](https://coolors.co/0b132b-1c2541-3a506b-5bc0be-6fffe9)
