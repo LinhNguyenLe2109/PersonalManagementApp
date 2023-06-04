@@ -1,7 +1,9 @@
+import Welcome from "@/components/homePage/Welcome";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      testsdfsdf
+    <main className="h-full my-auto text-center p-24">
+      <Welcome />
     </main>
   );
 }
