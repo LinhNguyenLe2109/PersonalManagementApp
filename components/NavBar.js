@@ -1,9 +1,8 @@
-'use client'
+"use client";
 import React from "react";
 import Link from "next/link";
-import {FaBars} from "react-icons/fa";
-import {AiFillCloseSquare} from "react-icons/ai";
-
+import { FaBars } from "react-icons/fa";
+import { AiFillCloseSquare } from "react-icons/ai";
 
 function NavBar() {
   const [navBarOpen, setNavBarOpen] = React.useState(false);
@@ -29,11 +28,25 @@ function NavBar() {
             <p className="text-xl mx-3 cursor-pointer">About</p>
           </Link>
         </div>
-
+        <div id="logInLogOut">
+          <Link href="/authentication" passHref legacyBehavior>
+            <p className="text-xl mx-3 cursor-pointer">Log in / Sign up</p>
+          </Link>
+        </div>
       </div>
       <div className="bar hidden">
-        {!navBarOpen && <FaBars className="cursor-pointer" onClick={()=>setNavBarOpen(!navBarOpen)} />}
-        {navBarOpen && <AiFillCloseSquare className="cursor-pointer" onClick={()=>setNavBarOpen(!navBarOpen)} />}
+        {!navBarOpen && (
+          <FaBars
+            className="cursor-pointer"
+            onClick={() => setNavBarOpen(!navBarOpen)}
+          />
+        )}
+        {navBarOpen && (
+          <AiFillCloseSquare
+            className="cursor-pointer"
+            onClick={() => setNavBarOpen(!navBarOpen)}
+          />
+        )}
       </div>
     </div>
   );

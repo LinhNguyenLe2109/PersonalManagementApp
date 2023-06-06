@@ -20,6 +20,7 @@ Sometimes I feel not so productive and time flies so fast. I want to know how I 
 - Tailwind CSS
 - React icons
 - [React Router](https://reactrouter.com/en/main)
+- [React Hook Form](https://react-hook-form.com/)
 
 ## Others
 - [Color Palette](https://coolors.co/0b132b-1c2541-3a506b-5bc0be-6fffe9)
