@@ -7,7 +7,7 @@ function Authentication() {
   const [haveAccount, setHaveAccount] = React.useState(true);
   return (
     <PageContainer>
-      <h1>{haveAccount ? "Log in" : "Create user account"}</h1>
+      <h1 className="text-3xl font-medium">{haveAccount ? "Log in" : "Create user account"}</h1>
       <div id="logInForm" className="flex flex-col">
         <CustomInput type="text" placeHolder="Username" />
         <CustomInput type="password" placeHolder="Password" />
