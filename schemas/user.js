@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const { nanoid } = require("nanoid");
 
-let mongoDBConnectionString = process.env.MONGO_URL;
+let mongoDBConnectionString = process.env.MONGODB_CONNECTION_URL;
 
 let Schema = mongoose.Schema;
 
@@ -12,8 +12,7 @@ let userSchema = new Schema({
     unique: true,
   },
   password: String,
-  favourites: [String],
-  history: [String],
+  records: [String],
 });
 
 let User;
